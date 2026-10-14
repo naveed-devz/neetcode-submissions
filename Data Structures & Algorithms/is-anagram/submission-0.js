@@ -5,8 +5,8 @@ class Solution {
      * @return {boolean}
      */
     isAnagram(s, t) {
-        let s1 = s.split("").sort().join("");
-        let t1 = t.split("").sort().join("");
-        return s1 === t1;
+       let s1 = s.split("").sort().join(" ").trim();
+       let s2 = t.split("").sort().join(" ").trim();
+       return s1 === s2
     }
 }
